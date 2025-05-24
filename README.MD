@@ -52,6 +52,8 @@ pip install opencv-python mediapipe numpy
 ###
 python app.py
 
+##
+
 ## 📜 Licença
 
 ### Feito por Lázaro Vasconcelos
