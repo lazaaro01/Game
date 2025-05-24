@@ -10,7 +10,6 @@ Um jogo interativo de **visão computacional** onde o jogador controla uma arma 
 - **OpenCV** – Para capturar e processar a imagem da webcam
 - **MediaPipe** – Para detecção e rastreamento das mãos e dedos
 - **NumPy** – Para cálculos e manipulação de arrays
-- *(opcional)* `pygame` – Para som ou renderização adicional
 
 ---
 
