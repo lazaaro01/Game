@@ -1,25 +1,27 @@
-# 🖐️ Hand Blaster - Jogo de Tiro com Controle por Gestos
+# 🖐️ Toque no Alvo - Jogo com Visão Computacional
 
-Um jogo interativo de **visão computacional** onde o jogador controla uma arma virtual usando **gestos de mão** detectados pela webcam. O objetivo é acertar alvos que aparecem na tela, gerenciando a munição e recarregando com gestos.
-
----
-
-## 📸 Tecnologias Utilizadas
-
-- **Python 3.10** – Linguagem principal do projeto
-- **OpenCV** – Para capturar e processar a imagem da webcam
-- **MediaPipe** – Para detecção e rastreamento das mãos e dedos
-- **NumPy** – Para cálculos e manipulação de arrays
+Este é um jogo interativo desenvolvido com **Python**, **OpenCV** e **MediaPipe** que utiliza **detecção das mãos em tempo real** para permitir que o usuário interaja com alvos na tela. O objetivo do jogo é simples: **tocar os alvos com o dedo indicador** antes que o tempo acabe.
 
 ---
 
 ## 🎮 Como Funciona
 
-- A webcam capta os movimentos da sua mão.
-- O **MediaPipe** detecta a posição dos dedos.
-- Quando você faz o gesto de disparo (por exemplo, **indicador esticado e polegar levantado**), um tiro é disparado.
-- O jogo detecta se você acertou os alvos.
-- Quando a munição acaba, um gesto específico (como mão fechada) pode ser usado para **recarregar**.
+- A webcam é utilizada para capturar a imagem ao vivo.
+- O MediaPipe detecta a mão do jogador e rastreia a posição do dedo indicador.
+- Sempre há **três alvos circulares** na tela.
+- Quando o dedo toca um alvo, o alvo desaparece e o jogador ganha um ponto.
+- O jogo dura **30 segundos**, e no final, a pontuação é exibida.
+- Uma **tela final** mostra a pontuação e oferece um botão para **reiniciar o jogo**.
+
+---
+
+## 🛠️ Tecnologias Usadas
+
+- **Python 3**
+- **OpenCV** (`cv2`)
+- **MediaPipe**
+- **NumPy**
+
 
 ---
 
@@ -51,8 +53,6 @@ pip install opencv-python mediapipe numpy
 
 ###
 python app.py
-
-##
 
 ## 📜 Licença
 
